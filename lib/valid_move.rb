@@ -1,12 +1,3 @@
-def valid_move?(board, index)
-  if (0...8) === index && position_taken? == true
-        true
-    else
-        false
-    end
-end
-  
-  
 def position_taken?(board, index)
   x = board[index]
   if x == " " || x == "" || x == nil
@@ -15,3 +6,15 @@ def position_taken?(board, index)
     true
   end
 end
+
+
+
+def valid_move?(board, index)
+  if (0...8) === index && position_taken? == true
+        true
+    else
+        false
+    end
+end
+  
+
